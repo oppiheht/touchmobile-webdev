@@ -48,35 +48,54 @@ header {
     margin-bottom: 17px;
 }
 
-nav ul {
+#nav-links {
     list-style: none;
     padding-left: 3px;
 }
 
-nav ul a {
+#nav-links a {
     text-decoration: none;
 }
 
-nav ul a li {
+#nav-links a li {
     color: lightgray;
     padding-left: 17px;
-    height: 45px;
-    line-height: 45px;
+    height: 50px;
+    line-height: 50px;
 }
 
-nav ul a li:hover {
+#nav-links a li:hover {
     background-color: rgba(108, 233, 0, 0.1);
     color: #C3E900;
     vertical-align: middle;
 }
 
-nav ul a li:active {
+#nav-links a li:active {
     background-color: rgba(108, 233, 0, 0.5);
     color: white;
     vertical-align: middle;
 }
 
-nav ul li img {
+#nav-links li img {
     padding-right: 10px;
     padding-top: 4px;
+    width: 40px;
+    height: 40px;
+}
+
+#back-link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 20px;
+    background-color: #E5E5E5;
+    width: 100%;
+}
+
+footer img {
+    height: 80%;
+    padding-top: 2px;
+    padding-left: 5px;
 }
