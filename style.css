@@ -2,14 +2,24 @@ html {
     font-family: sans-serif;
 }
 
-.container {
+.center {
     margin-right: auto;
     margin-left: auto;
+}
+
+.content {
+    height: 100%;
 }
 
 .routing-guide {
     width: 300px;
     height: 470px;
+    border: black line;
+}
+
+.survey {
+    width: 300px;
+    height: 625px;
     border: black line;
 }
 
@@ -85,7 +95,6 @@ header {
 
 #back-link {
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 footer {
