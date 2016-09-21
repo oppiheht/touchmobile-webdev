@@ -5,8 +5,6 @@ html {
 .container {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .routing-guide {
@@ -15,9 +13,13 @@ html {
     border: black line;
 }
 
-a {
+.breadcrumb a {
     color: #71e201;
     text-decoration: none;    
+}
+
+.content-padding {
+    padding-left: 17px;
 }
 
 .breadcrumb-current {
@@ -51,17 +53,30 @@ nav ul {
     padding-left: 3px;
 }
 
-nav ul li {
-    color: lightgray;
-    vertical-align: middle;
-    height: 30px;
+nav ul a {
+    text-decoration: none;
 }
 
-nav ul li:hover {
-    background-color: rgba(217, 255, 23, 0.2);
+nav ul a li {
+    color: lightgray;
+    padding-left: 17px;
+    height: 45px;
+    line-height: 45px;
+}
+
+nav ul a li:hover {
+    background-color: rgba(108, 233, 0, 0.1);
+    color: #C3E900;
+    vertical-align: middle;
+}
+
+nav ul a li:active {
+    background-color: rgba(108, 233, 0, 0.5);
+    color: white;
     vertical-align: middle;
 }
 
 nav ul li img {
     padding-right: 10px;
+    padding-top: 4px;
 }
