@@ -97,6 +97,22 @@ header {
     margin-top: 20px;
 }
 
+#survey-form {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#start-chat-btn {
+    width: 130px;
+    background-color: rgb(170, 213, 9);
+    border-color: white;
+    border-radius: 6px;
+}
+
+.subtext {
+    color: lightgrey;
+}
+
 footer {
     height: 20px;
     background-color: #E5E5E5;
