@@ -19,6 +19,9 @@ function stateSelectionChanged(event) {
     if (event.currentTarget.value == 'CA') {
         $('#boughtInCaliDiv').show();
     }
+    else {
+        $('#boughtInCaliDiv').hide();
+    }
 }
 
 function validateForm() {
@@ -30,6 +33,7 @@ function validateForm() {
     var phoneRegex = /\d{3}-\d{3}-\d{4}/
     if (nameInput.val().length == 0) {
         nameInput.addClass('invalid');
+        nameInput.change(function() {nameInput.removeClass('invalid')})
         nameRequiredText.show();
     }
     else {
@@ -38,10 +42,12 @@ function validateForm() {
     }
     if (phoneInput.val().length == 0) {
         phoneInput.addClass('invalid');
+        phoneInput.change(function() {phoneInput.removeClass('invalid')})
         phoneRequiredText.show();
     }
     else if (!phoneInput.val().match(phoneRegex)) {
         phoneInput.addClass('invalid');
+        phoneInput.change(function() {phoneInput.removeClass('invalid')})
         phoneRequiredText.hide();
         phoneInvalidText.show();
     }
@@ -51,6 +57,10 @@ function validateForm() {
         phoneInvalidText.hide();
     }
     if (!(nameInput.hasClass('invalid') || phoneInput.hasClass('invalid'))) {
-        alert("succes");
+        startChat();
     }
+}
+
+function startChat() {
+    $("#content").load("chat.html");
 }

@@ -120,6 +120,11 @@ input {
 
 .subtext {
     color: lightgrey;
+    border-color: red;
+}
+
+.invalid {
+    background-color: lightcoral !important;
 }
 
 footer {
