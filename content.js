@@ -10,7 +10,15 @@ function menuLoaded() {
 
 function surveyLoaded() {
     $('.error-text').hide();
+    $('#boughtInCaliDiv').hide();
     $('#start-chat-btn').click(validateForm);
+    $('#state').change(stateSelectionChanged);
+}
+
+function stateSelectionChanged(event) {
+    if (event.currentTarget.value == 'CA') {
+        $('#boughtInCaliDiv').show();
+    }
 }
 
 function validateForm() {
