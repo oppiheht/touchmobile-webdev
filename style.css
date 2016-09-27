@@ -109,6 +109,10 @@ header {
     border-radius: 6px;
 }
 
+input {
+    background-color: green;
+}
+
 .subtext {
     color: lightgrey;
 }
